@@ -5,19 +5,19 @@ date:   2017-01-02 14:32:00 +0100
 categories: code
 ---
 
-I'm not one for new years resolutions but yesterday (Jan 1, 2017) I decided to comit to [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash). I heard of this challenge on a CodeNewbie podcast featuring Alexander Kallyway ([listen to it here]([link text itself]: http://www.codenewbie.org/podcast/100-days-of-code)) and I think its a great initiative.
+I'm not one for new years resolutions but yesterday (Jan 1, 2017) I decided to commit to [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash). I heard of this challenge on a CodeNewbie podcast featuring Alexander Kallyway ([listen to it here]([link text itself]: http://www.codenewbie.org/podcast/100-days-of-code)) and I think it's a great initiative.
 
 ## The Rules
 
 The [rules](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.ktjqz9bw7) are simple, but I'm making a few minor adjustments to suit my skill level. I'm novice programmer but not a absolute beginner, I still heavily rely on tutorials which can be a massive time sink. 
 
-1. Not comfortable about tweeting everyday but I will tweet about my progress at least once a week -> ka11away using the hashtag #100DaysOfCode . In  addition to this, I will blog about my progress in 10 chunks using this blog and log daily progress using - <https://github.com/chiubaca/100-days-of-codes>
+1. Not comfortable about tweeting everyday but I will tweet about my progress at least once a week -> ka11away using the hashtag #100DaysOfCode . In  addition to this, I will blog about my progress in 10 chunks using this blog and log daily progress using - <https://github.com/chiubaca/100-days-of-code/blob/master/log.md>
 2.  I don't always get to code at work, I will jump at any opportunity to do so. It will count towards this challenge as long as it meets my personal requirements which are.
    - Python 
    - Web Developement 
-   - Automation(command line, Powershell, Bash)
-3. I will push code to GitHub every day so that anyone can see my progress at <https://github.com/chiubaca/100-days-of-code>. 
-4. I will be working to improve this blog , Project Euler , PluralSight tutorials, FreeCodeCamp tutorials and anything else I can get my hands on.
+   - Automation (command line, Powershell, Bash)
+3. I will push code to GitHub every day so that anyone can see my progress at <https://github.com/chiubaca/100-days-of-code/blob/master/log.md>. 
+4. I will be working to improve this blog ,Project Euler ,PluralSight tutorials ,FreeCodeCamp tutorials and anything else I can get my hands on.
 5. Only practical work tutorials, online courses and other similar resources will count towards this challenge. 
 6. If I miss a day a I can make it up by adding on a extra day. I can only at maximum skip 1 day in a row.
 
