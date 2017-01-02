@@ -22,7 +22,7 @@ The [rules](:https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4
 
 ## Why Am I Doing This?  
 
-I have become really interested in programming during 2016 and keen to take this to the net level 2017. I want to build something, but not sure what yet(or maybe I do, but just not ready to share it yet...). Until I work this out,I want to refine my skills in front and back end web development, not just know but really master HTML, CSS and JavaScript. In additon to this I want to use Python as much as a I can for work (and for fun). I will look into using either Flask or Django as a backend and if time permits pick up another language along the way!
+I have become really interested in programming during 2016 and keen to take this to the next level in 2017. I want to build something, but not sure what yet(or maybe I do, but just not ready to share it yet...). Until I work this out,I want to refine my skills in front and back end web development, not just "know" but really master HTML, CSS and JavaScript. In additon to this, I want to use Python as much as a I can for work (and for fun). I will look into using either Flask or Django as a backend and if time permits pick up another language along the way!
 
 Lets do this!  
 
