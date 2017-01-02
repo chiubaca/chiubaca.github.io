@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "My First Post"
-date:   2016-10-23 17:31:59 +0100
-categories: jekyll update
+title:  "Hello 2017 : A year of coding"
+date:   2017-01-02 19:00:00 +0100
+categories: code
 ---
-This is just a test post!!
+
+Setting this up for my first post. 
