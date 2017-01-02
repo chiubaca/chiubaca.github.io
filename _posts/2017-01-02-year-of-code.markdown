@@ -8,6 +8,7 @@ categories: code
 I'm not one for new years resolutions but yesterday (01/01/2017) I decided to comit to #100daysOfCode. I heard of this challenge on a CodeNewbie podcast featuring Alexander Kallyway ([listen to it here]([link text itself]: http://www.codenewbie.org/podcast/100-days-of-code)) .
 
 ##The Rules
+
 The [rules](:https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.ktjqz9bw7) are simple, but i'm making a few minor adjustments to suit my skill level. I'm novice programmer  but not a absolute beginner so I heavily rely on tutorials which can be a massive time sink. 
 
 1. Not comfortable about tweeting everyday but I will tweet about my progress at least once a week -> ka11away using the hashtag #100DaysOfCode . In  addition to this, I will blog about my progress in 10 chunks using this blog and log daily progress using - https://github.com/chiubaca/100-days-of-code
