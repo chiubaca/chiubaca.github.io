@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Hello 2017 : A Year Of Coding #100DaysOf Code"
+title:  "Hello 2017 : A Year Of Coding #100DaysOfCode"
 date:   2017-01-02 14:32:00 +0100
 categories: code
 ---
 
-I'm not one for new years resolutions but yesterday (Jan 1,2017) I decided to comit to #100daysOfCode. I heard of this challenge on a CodeNewbie podcast featuring Alexander Kallyway ([listen to it here]([link text itself]: http://www.codenewbie.org/podcast/100-days-of-code)) and I think its a great initiative.
+I'm not one for new years resolutions but yesterday (Jan 1, 2017) I decided to comit to [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash). I heard of this challenge on a CodeNewbie podcast featuring Alexander Kallyway ([listen to it here]([link text itself]: http://www.codenewbie.org/podcast/100-days-of-code)) and I think its a great initiative.
 
 ## The Rules
 
