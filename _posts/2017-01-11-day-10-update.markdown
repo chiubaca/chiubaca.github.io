@@ -25,7 +25,7 @@ ul{
 
 Perfect for quick navigation buttons! A traditional CSS approach would take a lot more code.
 
-It also support other cool things like reversing the order of objects and  aligning objects. Doing things the Flexbox way can rapidly reduce the amount the CSS you need to write and makes hacky CSS approaches a lot more elegant. [CSS-Tricks]( https://css-tricks.com/snippets/css/a-guide-to-flexbox/) has a great summary about it . 
+It also supports other cool things like reversing the order of objects and aligning objects. Doing things the Flexbox way can rapidly reduce the amount the CSS you need to write and makes hacky CSS approaches a lot more elegant. [CSS-Tricks]( https://css-tricks.com/snippets/css/a-guide-to-flexbox/) has a great summary about it . 
 
 ## Python 
 
@@ -48,7 +48,7 @@ while True:
 
 I'm not really satisfied with my solution and frankly I'm a bit embarrassed by how long it takes to compute the result. However, it is a great feeling when you finally crack it. I will try another when the time is right. 
 
-The other Python related work I've focused on was a  little automation project. I was fed up of manually updating the 100 Days of Code counter in my twitter bio so was looking at ways to automate it. Twitter has a REST API, but it's not I'm familiar with using right out of the box. A quick search on the internet led me to TweePy, a Python wrapper for the Twitter API. I was really surprised with how easy it was to use, for instance, to update your Twitter profile only requires one function with four arguments:
+The other Python related work I've focused on was a little automation project. I was fed up of manually updating the 100 days of code counter in my twitter bio so I started looking at ways to automate it. Twitter has a REST API, but it's not something I'm familiar with using right out of the box. A quick search on the internet led me to TweePy, a Python wrapper for the Twitter API. I was really surprised with how easy it was to use, for instance, to update your Twitter profile only requires one function with four arguments:
 
 ```python
 api.update_profile("username","website","location","Bio") 
@@ -60,13 +60,13 @@ My method of updating the 100 days of counter in my bio is only a crappy tempora
 counter = counter = str(datetime.datetime.today().day - 1)
 ```
 
-Then all I had to do was append this variable as a string along with my usual bio as an argument in the function above and done! This will only work until the end of the month...so will need to figure out another way to do this. 
+Then all I had to do was cast this as a string and append it with my usual bio as an argument in the function above and done! This will only work until the end of the month...so will need to figure out another way to do this. 
 
 Whilst I was working this out I had this wacky idea . 
 
 *"Could I mash this with another API...perhaps make my twitter give a weather forecast?"*
 
-I instantly went searching for weather API's . An internet search led me to some stack exchange threads and the general consensus was to check out the Open Weather Map API. Of course I wanted to stick with using Python so had two options to do this; use the Requests library  to poll the json feed from Open Weather Map. From there I could start working with it as a dictionary object. This turned out to be an absolute nightmare and has highlighted some holes in my knowledge with working with json/dictionaries in Python. Lukily there was another Python libary called PyOWM which has done all the hard for me.  Using PyOWM I was able to call the current weather status in London with the function
+I instantly went searching for weather API's . An internet search led me to some stack exchange threads and the general consensus was to check out the Open Weather Map API. Of course I wanted to stick with using Python so had two options to do this; use the Requests library  to poll the json feed from Open Weather Map. From there I could start working with it as a dictionary object. This turned out to be an absolute nightmare and has highlighted some holes in my knowledge with working with json/dictionaries in Python. Lukily there was another Python libary called PyOWM which has done all the hard for me.  Using PyOWM I was able to call the current weather status in London with this function.
 
 `weather_at_place('London,uk')`
 
@@ -78,7 +78,7 @@ Once the script was working I was a able to set it as a daily scheduled task on 
 
 ## Thoughts So Far
 
-Though initially the first couple of days were tough I find I'm enojoying this challenge more and more. The [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash) Twitter community is amazing and I'm enjoying interacting with others also participating in the challenge.
+Though initially the first couple of days were tough, I find I'm enojoying this challenge more and more. The [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash) Twitter community is amazing and I'm enjoying interacting with others also participating in the challenge.
 
 For the next 10 days I'm planning more CSS work . I want too play with Sass, disassemble this Jeklly blog and attempt to theme it from the ground up. 
 
