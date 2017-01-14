@@ -7,7 +7,7 @@ categories: code
 
 # Day 10 update
 
-I'm a bit late posting this! turns out squeezing in coding, fitness, cooking and work is actually pretty tricky. But I'm not making excuses, I've remained diligent and stuck to this. Here's what I've been up to in the last 10 days. 
+I'm a bit late posting this! Turns out squeezing in coding, fitness, cooking and work is actually pretty tricky. But I'm not making excuses, I've remained diligent and stuck to this. Here's what I've been up to in the last 10 days. 
 
 ## CSS
 
@@ -82,7 +82,7 @@ Though initially the first couple of days were tough I find I'm enojoying this c
 
 For the next 10 days I'm planning more CSS work . I want too play with Sass, disassemble this Jeklly blog and attempt to theme it from the ground up. 
 
-## Resources referenced
+## Resources Referenced
 
 [CSS - The Missing Manual ](http://shop.oreilly.com/product/0636920036357.do) ,
 [CSS Tricks](https://css-tricks.com/) ,
