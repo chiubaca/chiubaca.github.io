@@ -9,7 +9,7 @@ categories: code
 
 I'm a bit late posting this! turns out squeezing in coding, fitness, cooking and work is actually pretty tricky. But I'm not making excuses, I've remained diligent and stuck to this. Here's what I've been up to in the last 10 days. 
 
-##CSS
+## CSS
 
 I've been focusing a lot of on getting my CSS fundamentals up to scratch which is something I have been working on before starting [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode?src=hash) . I've been reading David S. McFarlands book, CSS - The Missing Manual and have learnt so much from it. The book covers everything - from the history of CSS , basic CSS to more advanced concepts and techniques such as responsive web design approaches, grid frame works , CSS pre-compilers, and general CSS best practices. What's great about the book is that it's written for mere mortals to understand . I really recommend it if you want to improve your knowledge of CSS. 
 
