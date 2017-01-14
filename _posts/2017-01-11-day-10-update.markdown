@@ -86,9 +86,9 @@ To the next 10 days!
 
 ## Resources referenced
 
-[CSS - The Missing Manual ](http://shop.oreilly.com/product/0636920036357.do) 
-[CSS Tricks](https://css-tricks.com/) 
-[Skeleton](http://getskeleton.com/) 
-[PythonAnywhere](https://www.pythonanywhere.com)
-[TweePy](http://www.tweepy.org/)
+[CSS - The Missing Manual ](http://shop.oreilly.com/product/0636920036357.do) ,
+[CSS Tricks](https://css-tricks.com/) ,
+[Skeleton](http://getskeleton.com/) ,
+[PythonAnywhere](https://www.pythonanywhere.com),
+[TweePy](http://www.tweepy.org/),
 [PyOWM](https://github.com/csparpa/pyowm)
