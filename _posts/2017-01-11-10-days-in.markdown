@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "#100DaysOfCode : Day 10 Update"
+title:  "#100DaysOfCode: 10 Days In"
 date:   2017-01-14 21:08:00 +0100
 categories: code
 ---
-
-# Day 10 update
 
 I'm a bit late posting this! Turns out squeezing in coding, fitness, cooking and work is actually pretty tricky. But I'm not making excuses, I've remained diligent and stuck to this. Here's what I've been up to in the last 10 days. 
 
