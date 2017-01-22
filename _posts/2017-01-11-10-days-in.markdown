@@ -64,7 +64,7 @@ Whilst I was working this out I had this wacky idea .
 
 *"Could I mash this with another API...perhaps make my twitter give a weather forecast?"*
 
-I instantly went searching for weather API's . An internet search led me to some stack exchange threads and the general consensus was to check out the Open Weather Map API. Of course I wanted to stick with using Python so had two options to do this; use the Requests library  to poll the json feed from Open Weather Map. From there I could start working with it as a dictionary object. This turned out to be an absolute nightmare and has highlighted some holes in my knowledge with working with json/dictionaries in Python. Luckily there was another Python libary called PyOWM which has done all the hard for me.  Using PyOWM I was able to call the current weather status in London with this function.
+I instantly went searching for weather API's . An internet search led me to some stack exchange threads and the general consensus was to check out the Open Weather Map API. Of course I wanted to stick with using Python so had two options to do this; use the Requests library  to poll the json feed from Open Weather Map. From there I could start working with it as a dictionary object. This turned out to be an absolute nightmare and has highlighted some holes in my knowledge with working with json/dictionaries in Python. Lukily there was another Python libary called PyOWM which has done all the hard for me.  Using PyOWM I was able to call the current weather status in London with this function.
 
 `weather_at_place('London,uk')`
 

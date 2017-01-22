@@ -3,20 +3,24 @@
 ---
 @charset "utf-8";
 
+
+
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: Charcoal;
+$base-font-size:   20px;
+$title-font-size: {{site.title-font-size}};
+
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #555;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
+$brand-color:      #98C1D9;
+$comp-color:       #A7D3A6;
+$grey-color:       #666;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -26,7 +30,8 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
+
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -34,6 +39,16 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
 
-// Import partials from the `minima` theme.
-@import "minima";
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+;
