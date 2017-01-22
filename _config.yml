@@ -31,7 +31,7 @@ paginate_path: /page:num/
 
 
 # Tracker
-analytics: 
+analytics: 'UA-90312276-1'
 
 # Comments
 disqus-shortname: chiubaca

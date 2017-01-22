@@ -4,13 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Vyaasa is a Jekyll theme created for a no-distraction reader-friendly websites. It is free and open source project. 
 
-For more themes visit - [**Webjeda Jekyll Themes**](https://blog.webjeda.com/jekyll-themes/){: target="_blank"}
+I am a specialist in Geographical Information Systems working in the Data and Technology department in an organisation that provides transport for a small little city called London.
 
-For Jekyll tutorials visit - [**Webjeda**](https://blog.webjeda.com/){: target="_blank"}
-
-Does the theme deserve a star?
-
-<a class="github-button" href="https://github.com/sharu725/vyaasa" data-style="mega" data-count-href="/sharu725/vyaasa/stargazers" data-count-api="/repos/sharu725/vyaasa#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/vyaasa on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+For 2017 I am trying #100DaysOfCode and I am using this blog to track my progress.
