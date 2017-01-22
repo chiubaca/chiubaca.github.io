@@ -35,6 +35,11 @@
     }
 }
 
+.site-slogon{
+    margin-top: -5px;
+    text-align: center;
+    font-size: 0.75em;
+}
 
 /**
  * Site footer
@@ -42,6 +47,17 @@
 .site-footer {
     padding: $spacing-unit 0;
 }
+
+.social-media{
+    display:flex;
+    width: 65px; 
+    height: 65px;
+}
+.social-media a img {
+   padding: 25px 15px 15px 15px
+
+}
+
 
 /**
  * Page content
