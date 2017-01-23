@@ -12,7 +12,7 @@
 # in the templates via {{ site.myvariable }}.
 
 
-title: "Technical Nonsense"
+title: "Technical-Nonsense"
 title-font-size: '2em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
 
 email: your-email@domain.com
