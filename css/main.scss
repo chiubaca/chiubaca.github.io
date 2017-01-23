@@ -3,11 +3,11 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Raleway|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Pacifico');
 
 //Title Font
 .site-title{
-    font-family: 'Kaushan Script'
+    font-family: 'Pacifico'
 }
 
 // Our variables
@@ -25,7 +25,7 @@ $text-color:       #555;
 $background-color: #fdfdfd;
 $brand-color:      #98C1D9;
 $comp-color:       #A7D3A6;
-$grey-color:       #666;
+$grey-color:       #3C3838;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
