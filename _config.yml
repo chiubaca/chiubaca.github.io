@@ -40,7 +40,7 @@ github: https://github.com/chiubaca
 twitter: https://twitter.com/chiubaca
 instagram: 'https://www.instagram.com/chiubaca/'
 linkedin: https://uk.linkedin.com/in/achiu1
-email: alexchiu11@gmail.com
+email: "mailto:alexchiu11@gmail.com?Subject=Hello"
 
 # Contact form
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
