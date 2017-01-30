@@ -33,7 +33,7 @@ paginate_path: /page:num/
 analytics: 'UA-90312276-1'
 
 # Comments
-disqus-shortname: 'chiubaca-blog'
+disqus-shortname: 'technical-nonsense'
 
 #Social Media
 github: https://github.com/chiubaca

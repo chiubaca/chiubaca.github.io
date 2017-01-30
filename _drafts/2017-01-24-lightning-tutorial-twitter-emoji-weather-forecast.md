@@ -5,7 +5,12 @@ date:   2017-01-02 14:32:00 +0100
 categories: tutorial
 ---
 
-This is a lightning tutorial to show you how you make your Twitter account tell the weather forecast using Tweepy, PyOWM and PythonAnywhere. 
+This is a lightning tutorial explain how I did this .
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Automated the <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash">#100DaysOfCode</a> counter in my bio. Oh, and my twitter username shows Londons weather in emoji now. All powered by Tweepy! 😁</p>— Alex Chiu ☔ (@chiubaca) <a href="https://twitter.com/chiubaca/status/819581877048721408">January 12, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 **Requirements:**
 - Have [pip](https://pip.pypa.io/en/stable/installing/) installed .
