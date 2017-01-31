@@ -1,20 +1,18 @@
 ---
 layout: post
-title:  "Lightning Tutorial : Twitter Emoji Weather Forecast "
-date:   2017-01-02 14:32:00 +0100
+title:  "⚡ Tutorial : Twitter Emoji Weather Forecast "
+date:   2017-01-31 16:35:00 
 categories: tutorial
 ---
 
-This is a lightning tutorial explain how I did this .
+This is a lightning tutorial explain how to make your Twitter username give a weather forecast using Tweepy , PyOWM and PythonAnywhere.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Automated the <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash">#100DaysOfCode</a> counter in my bio. Oh, and my twitter username shows Londons weather in emoji now. All powered by Tweepy! 😁</p>— Alex Chiu ☔ (@chiubaca) <a href="https://twitter.com/chiubaca/status/819581877048721408">January 12, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+It's a fun little hack which doesn't take much time to set up at all. 
 
+**If you want to follow along , you'll need to :** 
 
-
-**Requirements:**
 - Have [pip](https://pip.pypa.io/en/stable/installing/) installed .
-- Basic Python knowledge.
+- Have basic Python knowledge.
 
 
 **Time Required:**
@@ -44,26 +42,22 @@ auth.set_access_token(access_token, access_token_secret)
 auth.secure = True
 api = tweepy.API(auth)
 ```
-To get your keys, sign in to <https://apps.twitter.com/> .
+To get your keys, sign in to [apps.twitter.com](https://apps.twitter.com/) with your Twitter account.
 
-Here you can set up a new app then fill in the form to register your app.
+Here you can set up a new app then fill in the form to register your app like so.
 
 ![img](http://i1381.photobucket.com/albums/ah228/chiubaca/Jekyll%20Blog/register_zpsq2s5odax.png)
 
-Make sure you parse the the keys in as a `"string"`.
+Once you're signed up you can find your API keys in the "Keys and Access Tokens" tab. Make sure you parse the the keys in as a `"string"` in the code above.
 
+## Updating Your Profile Using TweePy
 
+Now we have established a connection to our Twitter account we can interact with our whole account through TweePy as if you were actually on Twitter. Because we have the power of Python too, it's possible to script some pretty interesting things like setting a up bot to automate sending a DM to a new follower. It's even possible to write a script to listen and wait for a new post with a specific hashtag, then perform an action. If you want to learn more about everything TweePy can do check out the [docs]() .
 
-
-
-##Updating Your Profile Using TweePy
-
-Now we have established a connection to our Twitter account we can interact with our whole account through TweePy as if you were actually on Twitter. Because we have the power of Python too , you can do some pretty interesting things like streaming in a specfic hashtag , create twitter bots and perform some quite sophisticated data crawling if you wanted too. If you want to learn more about everything TweePy can do check out the [docs]() .
-
-For this tutorial we just want to update our username and you can do so like this :
+For this tutorial we just want to update our profile. You can do so with this single function:
 
 ```python
- api.update_profile( "your-username" + "your-website","location", "description")
+api.update_profile( "your-username" + "your-website","location", "description")
 ```
 Thats it. Its almost too easy!
 
@@ -78,33 +72,34 @@ To install, simply:
 pip install PyOWM
 ```
 
-Like the Twitter API you will also have to obtain an API by signing up at the following site. <https://home.openweathermap.org/users/sign_up>
+To establish a connection to the OWM API , all you need is .
 
-Once you have done that, sign in and you can find your OWM in the "API keys" tab in your home section.
+```python
+import pyowm
 
-![img](http://i1381.photobucket.com/albums/ah228/chiubaca/Jekyll%20Blog/register2_zpstlup98ao.jpg)
-
-
-
-
-Remember to `import pyowm`  . Then simply parse that API key into this function as a `"string"`.
-
-```
 owm = OWM(API_key)
 ```
 
-## Check the weather with PyOWM
+Like the Twitter API you will also have to obtain an API key by signing up at the Open Weather Map [site](https://home.openweathermap.org/users/sign_up) .
 
-Now we can start having fun the with the Open Whether Map API. 
+ You can find your OWM API keys in the "API keys" tab.
 
-Set up the follow boilerplate code:
+![img](http://i1381.photobucket.com/albums/ah228/chiubaca/Jekyll%20Blog/register2_zpstlup98ao.jpg)
+
+## Check The Weather With PyOWM
+
+Now we can start having fun the with the OWM API. 
+
+First, set up the following boilerplate code:
 
 ```python
 obs = owm.weather_at_place('London,uk')
 w = obs.get_weather()
 ```
 
-Now `w` can call PyOWM functions like this.
+Here we have set the OWM API to only return results from London . Refer to the [city list]( http://openweathermap.org/help/city_list.txt) if you want to modify this. 
+
+ `w` is assigned to `obs.get_weather()`  so that we can easily call PyOWM methods related to weather like this.
 
 ```python
 w.get_wind()                  # {'speed': 4.6, 'deg': 330}
@@ -121,20 +116,20 @@ w.get_status() # returns'Clouds'
 
 We have now established how to update our Twitter username and also how to call a basic weather forecast with PyOWM. 
 
-​So now lets mash the two APIs together with emojis :smile: . 
+It's time to mash the two APIs together with emojis 😁 . 
 
 Here is some code that calls the weather via PyOWM and then uses Tweepy to update our Twitter username with an Emoji that corresponds with the weather. 
 
 ```python
 # Weather Emoji Unicode
-Clouds = u'\U00002601' #returns ☁  
-Clear = u'\U00002600' #returns ☀
+Clouds = u'\U00002601' #returns ☁️️  
+Clear = u'\U00002600' #returns ☀️️
 Rain =  u'\U00002614' #returns ☔
 Extreme =  u'\U0001F300' #returns 🌀
-Snow = u'\U00002744' #returns ❄
+Snow = u'\U00002744' #returns ❄️️
 Thunderstorm = u'\U000026A1' #returns ⚡
-Mist = u'\U0001F32B' #returns 🌤
-Haze = u'\U0001F324' #returns 🌫
+Mist = u'\U0001F32B' #returns ⛅
+Haze = u'\U0001F324' #returns 🌫️
 notsure = u'\U0001F648' #returns 🙈
 
 if weather == "Clouds":
@@ -160,20 +155,20 @@ elif weather == "Haze":
 
 elif weather == "Mist":
     api.update_profile("chiubaca "+ Mist,"chiubaca.github.io","London","Hey'Im Alex!")
-
+    
 else:
     api.update_profile("chiubaca "+ notsure,"chiubaca.github.io","London",bio + counter+"/100")
 ```
 
- Not the most elegant bit of code - If there are any suggestions to improve please drop a comment below. Nonetheless, I think it's pretty self explanatory. To break it down quickly...First we map the emoji unicode to some easier to understand variables. Next is just a rudimentary `if: elif: else:` crawl to go through all the possible weather outputs. The `else:` finishes on the monkey emoji just as precaution (kind of like a 404). Also the monkey emoji is my favourite so  wanted to sqeeze it somehow 🙈.
+Not the most elegant bit of code - If there are any suggestions to improve please drop a comment below. Nonetheless, I think it's pretty self explanatory. To break it down quickly, first we map some weather emoji unicode to some easier to understand variables. Next is just a rudimentary `if: elif: else:` crawl to go through all the possible weather outputs then it updates the username argument concatenated with an emoji that matches the weather. The `else:` finishes on the monkey emoji just as precaution (kind of like a 404). Also the monkey emoji is my favourite so  wanted to sqeeze it somehow 🙈.
 
-# Host on PythonAnywhere 
+# Host On PythonAnywhere 
 
 So we've written all this code but we still need a way to schedule this to run at least once a day.
 
-Enter [PythonAnywhere](https://www.pythonanywhere.com) . A cloud service for learning, writing, hosting and running Python code. The beginner tier gives you access to two virtual Python consoles and lets you run  a single python script on a scheduled task for free. Pretty neat aye?
+Enter [PythonAnywhere](https://www.pythonanywhere.com). A cloud service for learning, writing, hosting and running Python code. The beginner tier gives you access to two virtual Python consoles and lets you run a single python script on a scheduled task for free. Pretty neat aye?
 
-Once you're signed up, Go to your files section . You can either upload a python script you have already writen or create a new python file and paste the code in. 
+Once you're signed up, go to your files section . You can either upload a python script you have already written or create a new python file and paste the code in. 
 
 Your final code should look something like this .
 
@@ -212,7 +207,6 @@ Mist = u'\U0001F32B'
 Haze = u'\U0001F324'
 notsure = u'\U0001F648'
 
-
 #Check Weather and return relevant Emoji
 if weather == "Clouds":
     api.update_profile("chiubaca_bot "+ Clouds,"chiubaca.github.io","London",bio + counter +"/100")
@@ -237,13 +231,25 @@ print Clear+Rain+Extreme+Clouds+Snow+Thunderstorm+Haze+Mist+notsure
 print("updated!")
 ```
 
+**Side note** : to install new modules in PythonAnywhere refer to [this](https://help.pythonanywhere.com/pages/InstallingNewModules/) . 
+
+## Set A Scheduled Task In PythonAnywhere
+
+The only thing remaining now is to set the python script as a scheduled task. You can do this in the Schedule section in PythonAnywhere. Simply reference your script in your virtual directory like this.
+
+![img](http://i1381.photobucket.com/albums/ah228/chiubaca/Jekyll%20Blog/pythonanywhere_zps3aswhgm7.jpg)
 
 
 
+That's it! This script will now run everyday at 7:30AM . When I check my Twitter in the morning I can tell what the weather will be like just from my username like so .
+
+<blockquote class="twitter-tweet" data-lang="en" style="position:center"><p lang="en" dir="ltr">Automated the <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash">#100DaysOfCode</a> counter in my bio. Oh, and my twitter username shows Londons weather in emoji now. All powered by Tweepy! 😁</p>— Alex Chiu ☔ (@chiubaca) <a href="https://twitter.com/chiubaca/status/819581877048721408">January 12, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
+## Resources Referenced
 
-
-
-
+[TweePy](http://www.tweepy.org/),
+[PyOWM](https://github.com/csparpa/pyowm),
+[PythonAnywhere](https://www.pythonanywhere.com),
