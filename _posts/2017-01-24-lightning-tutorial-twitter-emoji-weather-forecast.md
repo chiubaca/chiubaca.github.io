@@ -5,7 +5,7 @@ date:   2017-01-31 16:35:00 +0000
 categories: tutorial
 ---
 
-This is a lightning tutorial explain how to make your Twitter username give a weather forecast using Tweepy , PyOWM and PythonAnywhere.
+This is a lightning tutorial to explain how to make your Twitter username give a weather forecast using Tweepy , PyOWM and PythonAnywhere.
 
 It's a fun little hack which doesn't take much time to set up at all. 
 
@@ -29,7 +29,7 @@ To install:
 pip install tweepy
 ```
 
-Here is the code you will need to establish a connection to your twitter account.
+Here is the code you will need to establish a connection to your twitter account:
 
 ```python
 import tweepy
@@ -54,7 +54,7 @@ Once you're signed up you can find your API keys in the "Keys and Access Tokens"
 
 Now we have established a connection to our Twitter account we can interact with our whole account through TweePy as if you were actually on Twitter. Because we have the power of Python too, it's possible to script some pretty interesting things like setting a up bot to automate sending a DM to a new follower. It's even possible to write a script to listen and wait for a new post with a specific hashtag, then perform an action. If you want to learn more about everything TweePy can do check out the [docs]() .
 
-For this tutorial we just want to update our profile. You can do so with this single function:
+For this tutorial we just want to update our profile. You can do so with this single line of code:
 
 ```python
 api.update_profile( "your-username" + "your-website","location", "description")
@@ -65,14 +65,14 @@ Thats it. Its almost too easy!
 
 Next, PyOWM.
 
-PyOWM is a client Python wrapper library for the OpenWeatherMap (OWM) web API.
+PyOWM is a client Python wrapper library for the Open Weather Map (OWM) web API.
 
 To install, simply:
 ```python
 pip install PyOWM
 ```
 
-To establish a connection to the OWM API , all you need is .
+To establish a connection to the OWM API , the code you need is :
 
 ```python
 import pyowm
@@ -133,31 +133,31 @@ Haze = u'\U0001F324' #returns 🌫️
 notsure = u'\U0001F648' #returns 🙈
 
 if weather == "Clouds":
-api.update_profile("chiubaca "+ Clouds,"chiubaca.github.io","London","Hey'Im Alex!")
+api.update_profile("Alex Chiu "+ Clouds,"chiubaca.github.io","London","Hey'Im Alex!")
 
 elif weather == "Clear":
-    api.update_profile("chiubaca "+ Clear,"chiubaca.github.io","Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Clear,"chiubaca.github.io","Hey'Im Alex!")
 
 elif weather == "Rain":
-    api.update_profile("chiubaca "+ Rain,"chiubaca.github.io","Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Rain,"chiubaca.github.io","Hey'Im Alex!")
 
 elif weather == "Extreme":
-    api.update_profile("chiubaca "+ Extreme,"chiubaca.github.io","Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Extreme,"chiubaca.github.io","Hey'Im Alex!")
 
 elif weather == "Snow":
-    api.update_profile("chiubaca "+ Snow,"chiubaca.github.io","London","Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Snow,"chiubaca.github.io","London","Hey'Im Alex!")
 
 elif weather == "Thunderstorm":
-    api.update_profile("chiubaca "+ Thunderstorm,"chiubaca.github.io","London", "Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Thunderstorm,"chiubaca.github.io","London", "Hey'Im Alex!")
 
 elif weather == "Haze":
-    api.update_profile("chiubaca "+ Haze,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Haze,"chiubaca.github.io","London",bio + counter+"/100")
 
 elif weather == "Mist":
-    api.update_profile("chiubaca "+ Mist,"chiubaca.github.io","London","Hey'Im Alex!")
+    api.update_profile("Alex Chiu "+ Mist,"chiubaca.github.io","London","Hey'Im Alex!")
     
 else:
-    api.update_profile("chiubaca "+ notsure,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ notsure,"chiubaca.github.io","London",bio + counter+"/100")
 ```
 
 Not the most elegant bit of code - If there are any suggestions to improve please drop a comment below. Nonetheless, I think it's pretty self explanatory. To break it down quickly, first we map some weather emoji unicode to some easier to understand variables. Next is just a rudimentary `if: elif: else:` crawl to go through all the possible weather outputs then it updates the username argument concatenated with an emoji that matches the weather. The `else:` finishes on the monkey emoji just as precaution (kind of like a 404). Also the monkey emoji is my favourite so  wanted to sqeeze it somehow 🙈.
@@ -209,33 +209,35 @@ notsure = u'\U0001F648'
 
 #Check Weather and return relevant Emoji
 if weather == "Clouds":
-    api.update_profile("chiubaca_bot "+ Clouds,"chiubaca.github.io","London",bio + counter +"/100")
+    api.update_profile("Alex Chiu "+ Clouds,"chiubaca.github.io","London",bio + counter +"/100")
 elif weather == "Clear":
-    api.update_profile("chiubaca_bot "+ Clear,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Clear,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Rain":
-    api.update_profile("chiubaca_bot "+ Rain,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Rain,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Extreme":
-    api.update_profile("chiubaca_bot "+ Extreme,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Extreme,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Snow":
-    api.update_profile("chiubaca_bot "+ Snow,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Snow,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Thunderstorm":
-    api.update_profile("chiubaca_bot "+ Thunderstorm,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Thunderstorm,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Haze":
-    api.update_profile("chiubaca_bot "+ Haze,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Haze,"chiubaca.github.io","London",bio + counter+"/100")
 elif weather == "Mist":
-    api.update_profile("chiubaca_bot "+ Mist,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ Mist,"chiubaca.github.io","London",bio + counter+"/100")
 else:
-    api.update_profile("chiubaca_bot "+ notsure,"chiubaca.github.io","London",bio + counter+"/100")
+    api.update_profile("Alex Chiu "+ notsure,"chiubaca.github.io","London",bio + counter+"/100")
 
 print Clear+Rain+Extreme+Clouds+Snow+Thunderstorm+Haze+Mist+notsure
 print("updated!")
 ```
 
+<iframe src="https://ghbtns.com/github-btn.html?user=chiubaca&repo=Twitter-Emoji-Weather-Forecast&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+
 **Side note** : to install new modules in PythonAnywhere refer to [this](https://help.pythonanywhere.com/pages/InstallingNewModules/) . 
 
 ## Set A Scheduled Task In PythonAnywhere
 
-The only thing remaining now is to set the python script as a scheduled task. You can do this in the Schedule section in PythonAnywhere. Simply reference your script in your virtual directory like this.
+The only thing remaining now is to set the python script as a scheduled task. You can do this in the "Schedule" section in PythonAnywhere. Simply reference your script in your virtual directory like this.
 
 ![img](http://i1381.photobucket.com/albums/ah228/chiubaca/Jekyll%20Blog/pythonanywhere_zps3aswhgm7.jpg)
 
@@ -248,7 +250,7 @@ That's it! This script will now run everyday at 7:30AM . When I check my Twitter
 
 
 
-## Resources Referenced
+# Resources Referenced
 
 [TweePy](http://www.tweepy.org/),
 [PyOWM](https://github.com/csparpa/pyowm),
