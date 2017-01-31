@@ -68,7 +68,8 @@ Next, PyOWM.
 PyOWM is a client Python wrapper library for the Open Weather Map (OWM) web API.
 
 To install, simply:
-```python
+
+```
 pip install PyOWM
 ```
 
