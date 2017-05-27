@@ -52,14 +52,14 @@ Once you're signed up you can find your API keys in the "Keys and Access Tokens"
 
 ## Updating Your Profile Using TweePy
 
-Now we have established a connection to our Twitter account we can interact with our whole account through TweePy as if you were actually on Twitter. Because we have the power of Python too, it's possible to script some pretty interesting things like setting a up bot to automate sending a DM to a new follower. It's even possible to write a script to listen and wait for a new post with a specific hashtag, then perform an action. If you want to learn more about everything TweePy can do check out the [docs]() .
+Now we have established a connection to our Twitter account we can interact with our whole account through TweePy as if you were actually on Twitter. Because we have the power of Python too, it's possible to script some pretty interesting things like setting a up bot to automate sending a DM to a new follower. It's also possible to write a script to listen and wait for a new post with a specific hashtag, then perform an action. If you want to learn more about everything TweePy can do check out the [docs]() .
 
 For this tutorial we just want to update our profile. You can do so with this single line of code:
 
 ```python
 api.update_profile( "your-username" + "your-website","location", "description")
 ```
-Thats it. Its almost too easy!
+Thats it. It's almost too easy!
 
 # PyOWM
 
@@ -117,7 +117,7 @@ w.get_status() # returns'Clouds'
 
 We have now established how to update our Twitter username and also how to call a basic weather forecast with PyOWM. 
 
-It's time to mash the two APIs together with emojis 😁 . 
+Time for the fun bit, lets mash the two APIs together with emojis 😁.
 
 Here is some code that calls the weather via PyOWM and then uses Tweepy to update our Twitter username with an Emoji that corresponds with the weather. 
 
@@ -167,7 +167,7 @@ Not the most elegant bit of code - If there are any suggestions to improve pleas
 
 So we've written all this code but we still need a way to schedule this to run at least once a day.
 
-Enter [PythonAnywhere](https://www.pythonanywhere.com). A cloud service for learning, writing, hosting and running Python code. The beginner tier gives you access to two virtual Python consoles and lets you run a single python script on a scheduled task for free. Pretty neat aye?
+Enter [PythonAnywhere](https://www.pythonanywhere.com). A cloud service writing, hosting and running Python code. The beginner tier gives you access to two virtual Python consoles and lets you run a single python script on a scheduled task for free. I love free stuff.
 
 Once you're signed up, go to your files section . You can either upload a python script you have already written or create a new python file and paste the code in. 
 
