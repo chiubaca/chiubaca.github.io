@@ -16,7 +16,7 @@ I was instantly inspired to start the 100 days of code challenge after hearing A
 
 ## Why I took On The Challenge
 
-I remember being completely put off programming when first trying to learn Visual Basic for a university project. I was under pressure to read guides, learn the language and build a functional tool to spec in a matter of days . I found the whole experience pretty stressful and it left a bad taste in my mouth for a while. Aside from writing a few python scripts for work I've generally tried to steer clear of programming whenever I can. However, last year I attended a dev summit where I saw so many passionate developers talk about the things they had built and proudly showing it off to thouasands of people, it was enough to change my outlook on programming and I realised I wanted to have a go at building things too. 100 Days Of Code was my excuse to kick start this properly. A reason for me to learn anything I wanted and build anything I wanted. 
+I remember being completely put off programming when first trying to learn Visual Basic for a university project. I was under pressure to read guides, learn the language and build a functional tool to spec in a matter of days . I found the whole experience pretty stressful and it left a bad taste in my mouth for a while. Aside from writing a few python scripts for work I've generally tried to steer clear of programming whenever I can. However, last year I attended a dev summit where I saw so many passionate developers talk about the things they had built and proudly showing it off to thousands of people, it was enough to change my outlook on programming and I realised I wanted to have a go at building things too. 100 Days Of Code was my excuse to kick start this properly. A reason for me to learn anything I wanted and build anything I wanted. 
 
 <br/>
 
@@ -34,13 +34,12 @@ As each day passed and I made yet more mistakes, there were many moments of feel
 
 <br/>
 
-As became more confident in my skills I finally got around to coding a few things over the 100 days. One being this blog built using Jekyll. I learnt a bit about making Twitter bots with [TweePy][https://chiubaca.github.io/tutorial/2017/01/31/lightning-tutorial-twitter-emoji-weather-forecast.html]. I also had a quick go at trying to make a game with [Canvas][https://codepen.io/chiubaca/pen/zZxgzJ]. Most recently I have been working on a an interactive air Pollution map using London Air API and Chart JS , check it out:  
+As I became more confident in my skills I finally got around to coding a few things over the 100 days. One being this blog  site built using Jekyll. I learnt a bit about making Twitter bots with [TweePy](https://chiubaca.github.io/tutorial/2017/01/31/lightning-tutorial-twitter-emoji-weather-forecast.html) . I also had a quick go at trying to make a game with [Canvas](https://codepen.io/chiubaca/pen/zZxgzJ). Most recently I have been working on an [interactive air Pollution map using London Air API and Chart JS](http://chiubaca.gq/).
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Pre-alpha of my <a href="https://twitter.com/LondonAir">@LondonAir</a> Pollution Explorer app. Mobile version needs more work. D93/<a href="https://twitter.com/hashtag/100DaysOfCode?src=hash">#100DaysOfCode</a>. 1 more week! <a href="https://t.co/TH3JdBCre4">https://t.co/TH3JdBCre4</a> <a href="https://t.co/kB9PltLnDF">pic.twitter.com/kB9PltLnDF</a></p>&mdash; Alex Chiu (@chiubaca) <a href="https://twitter.com/chiubaca/status/861667780793442304">May 8, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<br/>
+![pollution map](http://i1381.photobucket.com/albums/ah228/chiubaca/ezgif-1-c1261712a2_zpsm6mjozdk.gif)] (http://chiubaca.gq/)
 
-Though it feels good to look back on what I've learnt and its good to see all those hours have actually amounted to something tangible, i'm far more excited of the prospect of learning even more, maybe I'll even revisit React. 
 
-If you've made it this far, thanks for reading! if you're on 100DayOfChallenge or thinking about it, I wish you good luck with your coding endeavors.  
+Though it feels good to look back on what I've learnt and its good to see all those hours have actually amounted to something tangible, I'm far more excited of the prospect of learning even more, maybe I'll even revisit React again. 
+
+If you've made it this far, thanks for reading! If you're on the 100 Day Of Challenge or even just thinking about it, I wish you good luck on your coding endeavors.
