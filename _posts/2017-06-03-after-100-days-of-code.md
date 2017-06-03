@@ -16,7 +16,7 @@ I was instantly inspired to start the 100 days of code challenge after hearing A
 
 ## Why I took On The Challenge
 
-I remember being completely put off programming when first trying to learn Visual Basic for a university project. I was under pressure to read guides, learn the language and build a functional tool to spec in a matter of days . I found the whole experience pretty stressful and it left a bad taste in my mouth for a while. Aside from writing a few python scripts for work I've generally tried to steer clear of programming whenever I can. However, last year I attended a dev summit where I saw so many passionate developers talk about the things they had built and proudly showing it off to hungreds of people, it was enough to change my outlook on programming and I realised I wanted to have a go at building things too. 100 Days Of Code was my excuse to kick start this properly. A reason for me to learn anything I wanted and build anything I wanted. 
+I remember being completely put off programming when first trying to learn Visual Basic for a university project. I was under pressure to read guides, learn the language and build a functional tool to spec in a matter of days . I found the whole experience pretty stressful and it left a bad taste in my mouth for a while. Aside from writing a few python scripts for work I've generally tried to steer clear of programming whenever I can. However, last year I attended a dev summit where I saw so many passionate developers talk about the things they had built and proudly showing it off to hundreds of people, it was enough to change my outlook on programming and I realised I wanted to have a go at building things too. 100 Days Of Code was my excuse to kick start this properly. A reason for me to learn anything I wanted and build anything I wanted. 
 
 <br/>
 
@@ -32,11 +32,11 @@ About an hour into reading the documentation and doing a few tutorials, I realis
 
 <br/>
 
-I realised I had to ensure my fundamentals of HTML CSS and JS were solid before I started building anything, I promised myself not to be seduced by some another fancy preprocesser or framework before my fundamentals were in place, and I'm glad I figured this out early on and stuck by this. When I eventually started playing around with things like SaSS and Jekyll I had a much better appreciation of their abstractions and how they were making things easier, rather than just using them for the sake of using them.  
+I realised I had to ensure my fundamentals of HTML CSS and JS were solid before I started building anything, I promised myself not to be seduced by another fancy preprocesser or framework before my fundamentals were in place, and I'm glad I figured this out early on and stuck by this. When I eventually started playing around with things like SaSS and Jekyll I had a much better appreciation of their abstractions and how they were making things easier, rather than just using them for the sake of using them.  
 
 <br/>
 
-As each day passed , there many more moments where I felt I was in way over my head. I felt demoralised when I got stuck or didn't understand a concept. However, forcing myself to code everyday meant I didn't simply just accept the fact I didn't understand something. I learnt to break down concepts into more manageable chunks, focusing on the smaller components first before bringing it all together. When things finally clicked and made sense it felt like a massive milestone. It sounds so obvious now as I type this, but its OK to not understand something straight away. Programming is hard! Whether you have to watch a dozen YouTube vids on the same topic or you have to hack around in a console for hours on end, nothing is too complex to understand when you break it down.
+As each day passed , there were many more moments where I felt I was in way over my head. I felt demoralised when I got stuck or didn't understand a concept. However, forcing myself to code everyday meant I didn't simply accept the fact I didn't understand something. I learnt to break down concepts into more manageable chunks, focusing on the smaller components first before bringing it all together. When things finally clicked and made sense it felt like a massive milestone. It sounds so obvious now as I type this, but its OK to not understand something straight away. Programming is hard! Whether you have to watch a dozen YouTube vids on the same topic or you have to hack around in a console for hours on end, nothing is too complex to understand when you break it down.
 
 <br/>
 
@@ -47,6 +47,6 @@ As I became more confident in my skills I finally got around to coding a few thi
 
 <br />
 
-Though it feels good to look back on what I've learnt and see that all those hours have actually amounted to something tangible, I'm far more excited of the prospect of learning and building even more things, maybe I'll even revisit React again, we'll see!
+Though it feels good to look back on what I've learnt and see that all those hours have actually amounted to something tangible, I'm far more excited of the prospect of learning and building even more things, maybe I'll even revisit React again.
 
-If you've made it this far, thanks for reading! If you're on the 100 Day of Challenge or even just thinking about it, I wish you good luck on your coding endeavors.
+If you've made it this far, thanks for reading! If you're on the 100 Day of Challenge or just about to start, I wish you good luck on your coding endeavors.
