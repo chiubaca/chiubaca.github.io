@@ -5,10 +5,6 @@ permalink: /about/
 ---
 
 
-Thanks for checking out my blog. 
+Hey there!
 
-I'm a GIS Analyst working in the Data and Technology department in an organisation that provides transport for a small little city called London.
-
-For 2017 I am striving to improve my technical knowledge in coding by participating in #100DaysOfCode. 
-
-I'm using this blog to track my progress.
+If you're reading this, you've stumbled into the dumping grounds of the thoughts of Alex Chiu. The whole site is still under construction but in the meantime you'll find technical blogs about code, maps and random hacks.
