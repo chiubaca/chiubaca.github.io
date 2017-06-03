@@ -10,7 +10,7 @@ I've been coding for 100 days and here's my ten cents on the experience.
 I was instantly inspired to start the 100 days of code challenge after hearing Alex Kallaway talk about it on [Code Newbies podcast](http://www.codenewbie.org/podcast). Part of Kallways philosophy behind the challenge is to not over think it, just start fire up an IDE and start coding before you have time to make an excuse. I urge others thinking of taking on the challenge to do this right now. Stop thinking, publically announce it on social media and just DO IT. 
 
 {: .center}
-![img](http://i.imgur.com/7524jhl.gif)
+![img](https://i.imgur.com/7524jhl.gif)
 
 <br/>
 
