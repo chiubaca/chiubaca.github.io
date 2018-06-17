@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Skills Update + Review"
+title:  "Coding Skills Review and Mid-Year Training Plan"
 date:   2018-06-17 12:49:00 +0100
 categories: code
 ---
@@ -32,7 +32,7 @@ I also recently completed a Javascript test at work. My results showed my skills
 
 ## Game Plan
 
- The #100DaysOfCode challenge taught me a lot about my self. Self discipline beats motivations every day of the week. As long as I made coding a part of my day-to-day routine I didn't have an excuse not to code. This principle holds true for anything you want to do do. Fitness goals, learning new skills, pretty much anything. If you want something enough, you will make time for it. So taking this mentality. There some actionable things I want to achieve by the end of 2018.
+ The #100DaysOfCode challenge taught me a lot about my self. Self discipline beats motivations every day of the week. As long as I made coding a part of my day-to-day routine I didn't have an excuse not to code. This principle holds true for anything you want to do do. Fitness goals, learning new skills, pretty much anything. If you want something enough, you will make time for it. So taking this mentality, here are some actionable things I want to achieve by the end of 2018.
 
  1) Get my FCC Javascript Algorithms And Data Structures Certification (By the end of August)
 
@@ -43,7 +43,7 @@ I also recently completed a Javascript test at work. My results showed my skills
  4) Monthly blog to document my progress with where I am with this. 
 
 
-Lots of focus on Free Camp Course because I feel by completing they will fill in all my missing gaps in my Javascript fundamentals. 
+Lots of focus on Free Camp Courses as I feel by completing them will help fill in any gaps in my Javascript fundamentals. 
 
 As a bonus, I also want to get through the following books:
 
@@ -52,6 +52,3 @@ As a bonus, I also want to get through the following books:
 2) [You Dont Know Javascript](https://github.com/getify/You-Dont-Know-JS)
 
 3) [Eloquent JavaScript](http://eloquentjavascript.net/)
-
-
-
