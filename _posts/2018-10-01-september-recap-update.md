@@ -7,7 +7,7 @@ categories: code
 
 I feel like a broken record when I complain about how quickly each month flies by, but it reinforces how important it is to have these monthly goals. Without them, I feel like the whole year would slip by before I even realise.
 
-So did I hit my goals for September?
+## So did I hit my goals for September?
 
 - Build three web apps with Dojo by the end of September
   - Basic Calculator ✔️
@@ -16,7 +16,7 @@ So did I hit my goals for September?
 - Start improving my knowledge of Esri WAB
   - Build a widget ✔️
 
-What happened?
+## What happened?
 
 Only completed 50%  of my objectives, looks kind of bad on paper. In retrospect, I went down a deep Dojo-toolkit rabbit hole . It turns out there was a lot more to the Dojo-toolkit than I thought! It is a massive library which tries to do so much.
 
@@ -42,7 +42,7 @@ Finally I ported the app into a WAB  widget (Esri Web App Builder). This was pre
 
 Though I didn't build three different apps using Dojo, I sure went deep into the inner workings of Dojo-toolkit and feel massively more confident using it in my day-to-day work
 
-Next Goals
+## Next Goals
 
 I've been thinking a lot about my longer term goals to level up as a developer. After watching this episode of Fun Fun Functions I realise I really need to distinguish my work and play goals. Though both intertwine in some ways, I need to be clear that some things I'm learning for fun and other things I need to learn for work. Last months goals were very work oriented. This led to quite a bit of demotivation and definitely saw some increased levels of slacking which after watching that same episode of Fun Fun Functions, was probably the over justification effect  kicking in. My extra curriculum coding felt a lot like home work...and actually, it was! Last months goals was all preparation for the next work sprint which is kicking off again shortly after a month long break. This work up front has definitely made me feel more prepared for this upcoming work.
 
