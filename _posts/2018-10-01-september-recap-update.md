@@ -65,17 +65,15 @@ If I can find that balance of coding for fun and coding for work. I should be ab
 
 A lot of things I want to learn, but too much to cover in a month. Seeing as this month I'm off on holiday for two weeks, the things I really want to master by November is the following : - 
 
-JS Modules
+JS Modules , Loaders and Bundling :
 
 - AMD
 - Common JS
 - ES6 Modules
-
-Module Loaders
-
 - RequireJS
 - SystemJS
 - Webpack
+- Browerify
 
 New ECMAScript stuff
 
