@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:700,700italic,400,400italic" rel="stylesheet" type="text/css" />
   <title>Alex Chiu</title>
 </head>
 
@@ -13,8 +13,8 @@
   <div class=wrapper>
     <main class=profile-card>
       <div class="info-container">
-        <h1>Alex Chiu</h1>
-        <h2>
+        <h1 class="title">Alex Chiu</h1>
+        <h2 class="subtext">
           <p>Full-stack Front-end Web Developer</p>
           <p>Learning In Public | Building For Fun</p>
         </h2>
@@ -33,6 +33,24 @@
   html{
     overflow-y: hidden; 
   }
+
+  .title{
+    color: #474747;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 0.125rem;
+    width: calc(100% + 0.125rem);
+    font-size: 3.75em;
+    line-height: 1.125;
+    font-weight: 700;
+  }
+
+  .subtext {
+    color: #474747;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 0.125rem;
+    font-size: 1em;
+    font-weight: 500;
+      }
 
   .wrapper {
     display: flex;
