@@ -35,12 +35,15 @@
 
 
 </body>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc52f173246c47a4aabbf845994ecacd"}'></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+  data-cf-beacon='{"token": "dc52f173246c47a4aabbf845994ecacd"}'></script>
+
 </html>
 <style>
   html {
     overflow-y: hidden;
     font-size: 62.5%;
+    background-color: #e7e7e7;
   }
 
   .title {
@@ -75,7 +78,6 @@
     -webkit-transform: perspective(100rem);
     transform: perspective(100rem);
     cursor: pointer;
-
   }
 
   .profile-card__container {
@@ -85,14 +87,14 @@
     transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
     display: flex;
     justify-content: space-evenly;
-    background-color: #eeececcc;
+    /* background-color: #eeececcc; */
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    z-index: 2;
-    width: 30rem;
+    width: 50rem;
     height: 36rem;
     transition: -webkit-transform .6s 1s;
-  transition: transform .6s 1s;
-  transition: transform .6s 1s, -webkit-transform .6s 1s;
+    transition: transform .6s 1s;
+    transition: transform .6s 1s, -webkit-transform .6s 1s;
+    background-color: rgb(240, 240, 240);
   }
 
   .profile-card__container::before,
@@ -100,9 +102,8 @@
     content: "";
     width: 2rem;
     height: 2rem;
-    border: 1px solid #fff;
+    border: 1px solid rgb(63, 63, 63);
     position: absolute;
-    z-index: 9999;
     opacity: .3;
     transition: .3s;
   }
@@ -136,19 +137,23 @@
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    margin: 50px;
+    padding: 40px;
+    flex:1;
   }
 
   .profile-pic-container {
     display: flex;
     justify-content: center;
+    padding: 30px;
+    flex:1
   }
 
   .profile-pic {
-    max-width: 100%;
     height: auto;
+    width: 100%;
     object-fit: scale-down;
-    padding: 20px;
+
+    margin: 20px;
   }
 
   /*  */
@@ -162,7 +167,7 @@
 
       this.element = element;
       this.container = this.element.querySelector(".profile-card__container");
-      this.size = [300, 360];
+      this.size = [500, 360];
       [this.w, this.h] = this.size;
 
       this.tiltEffect = tiltEffect;
