@@ -2,253 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:700,700italic,400,400italic" rel="stylesheet"
     type="text/css" />
-  <title>Alex Chiu</title>
+  <title>Alex Chiu | ᴛᴀᴋᴇ ᴍʏ ᴄᴀʀᴅ</title>
 </head>
 
 <body>
+  <main class="center">
+    <div class="card">
+      <div class="card__3d">
+        <div class="card__inner">
+          <div class="info__wrapper">
+            <h1 class="title">Alex Chiu</h1>
 
+            <div class="bio">
+              <p>Full-stack Front-end Web Developer</p>
+              <p>Learning In Public | Building For Fun</p>
+            </div>
+          </div>
 
-  <div class=page-container>
-
-    <main class=profile-card>
-      <div class=profile-card__container>
-        <div class="info-container">
-          <h1 class="title">Alex Chiu</h1>
-          <h2 class="subtext">
-            <p>Full-stack Front-end Web Developer</p>
-            <p>Learning In Public | Building For Fun</p>
-          </h2>
-        </div>
-        <div class=profile-pic-container>
-          <img class="profile-pic" src="./assets/profile_pic.jpg" alt="profile picture">
+          <div class="pic__wrapper">
+            <img class="profile-pic" src="./assets/profile_pic.jpg" alt="its me, alex" />
+          </div>
         </div>
       </div>
-    </main>
-
-  </div>
-
-
-
-
+    </div>
+  </main>
 </body>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-  data-cf-beacon='{"token": "dc52f173246c47a4aabbf845994ecacd"}'></script>
-<script data-goatcounter="https://chiubaca.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+
 </html>
 <style>
+  @import "normalize.css";
+
   html {
     overflow-y: hidden;
-    font-size: 62.5%;
     background-color: #e7e7e7;
+    font-family: "Inconsolata", monospace;
+  }
+
+  .center {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    perspective: 800px;
+    width: 50rem;
+    height: 26rem;
+    position: relative;
+  }
+
+  .card__3d {
+    transform: rotateY(var(--r-x)) rotateX(var(--r-y));
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(245, 242, 242);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s;
+  }
+
+  .card__3d:not(:hover) {
+    transition: transform 1s;
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  .card__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
   }
 
   .title {
-    color: #474747;
-    font-family: 'Inconsolata', monospace;
-    letter-spacing: 0.125rem;
-    width: calc(100% + 0.125rem);
-    font-size: 3.75em;
-    line-height: 1.125;
-    font-weight: 700;
-  }
-
-  .subtext {
-    color: #474747;
-    font-family: 'Inconsolata', monospace;
-    letter-spacing: 0.125rem;
-    font-size: 1em;
-    font-weight: 500;
-  }
-
-  .page-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .profile-card {
-    margin: 2rem;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: perspective(100rem);
-    transform: perspective(100rem);
-    cursor: pointer;
-  }
-
-  .profile-card__container {
-    --rX: 0;
-    --rY: 0;
-    -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-    display: flex;
-    justify-content: space-evenly;
-    /* background-color: #eeececcc; */
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    width: 50rem;
-    height: 36rem;
-    transition: -webkit-transform .6s 1s;
-    transition: transform .6s 1s;
-    transition: transform .6s 1s, -webkit-transform .6s 1s;
-    background-color: rgb(240, 240, 240);
-  }
-
-  .profile-card__container::before,
-  .profile-card__container::after {
-    content: "";
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid rgb(63, 63, 63);
-    position: absolute;
-    opacity: .3;
-    transition: .3s;
-  }
-
-  .profile-card__container::before {
-    top: 2rem;
-    right: 2rem;
-    border-bottom-width: 0;
-    border-left-width: 0;
-  }
-
-  .profile-card__container::after {
-    bottom: 2rem;
-    left: 2rem;
-    border-top-width: 0;
-    border-right-width: 0;
-  }
-
-  .profile-card__container--active {
-    transition: none;
-  }
-
-  .profile-card:hover .profile-card__container::before,
-  .profile-card:hover .profile-card__container::after {
-    width: calc(100% - 4rem);
-    height: calc(100% - 4rem);
-  }
-
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: right;
-    padding: 40px;
-    flex:1;
   }
 
-  .profile-pic-container {
+  .bio {
+    text-align: right;
+  }
+
+  .pic__wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 30px;
-    flex:1
   }
 
   .profile-pic {
-    height: auto;
-    width: 100%;
-    object-fit: scale-down;
-
-    margin: 20px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
   }
-
-  /*  */
 </style>
 
 <script>
+  const el = document.querySelector(".card");
 
-  class parallaxTiltEffect {
+  let w = el.clientWidth;
+  let h = el.clientHeight;
+  let b = el.getBoundingClientRect();
 
-    constructor({ element, tiltEffect }) {
+  el.addEventListener("mousemove", (e) => {
+    let X = (e.clientX - b.left) / w;
+    let Y = (e.clientY - b.top) / h;
 
-      this.element = element;
-      this.container = this.element.querySelector(".profile-card__container");
-      this.size = [500, 360];
-      [this.w, this.h] = this.size;
+    let rX = -(X - 0.5) * 26;
+    let rY = (Y - 0.5) * 26;
 
-      this.tiltEffect = tiltEffect;
+    document.documentElement.style.setProperty("--x", 100 * X + "%");
+    document.documentElement.style.setProperty("--y", 100 * Y + "%");
 
-      this.mouseOnComponent = false;
-
-      this.handleMouseMove = this.handleMouseMove.bind(this);
-      this.handleMouseEnter = this.handleMouseEnter.bind(this);
-      this.handleMouseLeave = this.handleMouseLeave.bind(this);
-      this.defaultStates = this.defaultStates.bind(this);
-      this.setProperty = this.setProperty.bind(this);
-      this.init = this.init.bind(this);
-
-      console.log("got profile card", this.container)
-
-      this.init();
-    }
-
-    handleMouseMove(event) {
-      const { offsetX, offsetY } = event;
-
-      let X;
-      let Y;
-
-      if (this.tiltEffect === "reverse") {
-        X = ((offsetX - (this.w / 2)) / 3) / 3;
-        Y = (-(offsetY - (this.h / 2)) / 3) / 3;
-      }
-
-      else if (this.tiltEffect === "normal") {
-        X = (-(offsetX - (this.w / 2)) / 3) / 3;
-        Y = ((offsetY - (this.h / 2)) / 3) / 3;
-      }
-
-      this.setProperty('--rY', X.toFixed(2));
-      this.setProperty('--rX', Y.toFixed(2));
-
-      this.setProperty('--bY', (80 - (X / 4).toFixed(2)) + '%');
-      this.setProperty('--bX', (50 - (Y / 4).toFixed(2)) + '%');
-      console.log("move", X, Y)
-    }
-
-    handleMouseEnter() {
-      console.log("enter", this.container);
-      this.mouseOnComponent = true;
-      this.container.classList.add("profile-card__container--active");
-    }
-
-    handleMouseLeave() {
-      console.log("leave");
-      this.mouseOnComponent = false;
-      this.defaultStates();
-    }
-
-    defaultStates() {
-      this.container.classList.remove("profile-card__container--active");
-      this.setProperty('--rY', 0);
-      this.setProperty('--rX', 0);
-      this.setProperty('--bY', '80%');
-      this.setProperty('--bX', '50%');
-    }
-
-    setProperty(p, v) {
-      return this.container.style.setProperty(p, v);
-    }
-
-    init() {
-      this.element.addEventListener('mousemove', this.handleMouseMove);
-      this.element.addEventListener('mouseenter', this.handleMouseEnter);
-      this.element.addEventListener('mouseleave', this.handleMouseLeave);
-    }
-
-  }
-
-  const $ = e => document.querySelector(e);
-
-  console.log("Whats $('.profile-card')?", $('.wrapper'))
-  const wrap2 = new parallaxTiltEffect({
-    element: $('.profile-card'),
-    tiltEffect: 'reverse'
+    document.documentElement.style.setProperty("--r-x", rX + "deg");
+    document.documentElement.style.setProperty("--r-y", rY + "deg");
   });
-
 </script>
+
+<script defer async src="https://cdn.counter.dev/script.js" data-id="91ee2db8-dc88-40a2-9529-ef18149e911b"
+  data-utcoffset="0"></script>
