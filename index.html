@@ -27,6 +27,8 @@
             <img class="profile-pic" src="./assets/profile_pic.jpg" alt="its me, alex" />
           </div>
         </div>
+
+        <div class="card__soft-light"></div>
       </div>
     </div>
   </main>
@@ -71,6 +73,22 @@
     transition: transform 1s;
     transform: rotateY(0deg) rotateX(0deg);
   }
+
+
+  .card__soft-light {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    /* mix-blend-mode: soft-light; */
+    /* mix-blend-mode: difference; */
+    background: radial-gradient(farthest-corner circle at var(--x) var(--y),
+        rgba(255, 255, 255, 0.8) 10%,
+        rgba(255, 255, 255, 0.65) 20%,
+        rgba(255, 255, 255, 0) 90%);
+
+  }
+
+
 
   .card__inner {
     position: absolute;
