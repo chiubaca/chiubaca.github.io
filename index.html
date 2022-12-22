@@ -18,17 +18,19 @@
             <h1 class="title">Alex Chiu</h1>
 
             <div class="bio">
-              <p>Full-stack Front-end Web Developer</p>
+              <p>Full-stack Web Developer</p>
               <p>Learning In Public | Building For Fun</p>
             </div>
           </div>
 
           <div class="pic__wrapper">
             <img class="profile-pic" src="./assets/profile_pic.jpg" alt="its me, alex" />
+            <div class="card__layer2"></div>
           </div>
         </div>
 
         <div class="card__soft-light"></div>
+
       </div>
     </div>
   </main>
@@ -37,6 +39,32 @@
 </html>
 <style>
   @import "normalize.css";
+
+  :root {
+    --step: 50%;
+    --alpha: 0.0001;
+    --pattern: url("./assets/pattern.png") center / 100%;
+
+    --rainbow: repeating-linear-gradient(0deg,
+        rgba(255, 120, 115, var(--alpha)) calc(var(--step) * 1),
+        rgba(255, 236, 95, var(--alpha)) calc(var(--step) * 2),
+        rgba(167, 255, 95, var(--alpha)) calc(var(--step) * 3),
+        rgba(131, 255, 247, var(--alpha)) calc(var(--step) * 4),
+        rgba(120, 147, 255, var(--alpha)) calc(var(--step) * 5),
+        rgba(216, 117, 255, var(--alpha)) calc(var(--step) * 6),
+        rgba(255, 120, 115, var(--alpha)) calc(var(--step) * 7)) 0% var(--bg-y, 10%) / 200% 700%;
+    --diagonal: repeating-linear-gradient(128deg,
+        #0e152e 0%,
+        hsl(180, 10%, 60%, var(--alpha)) 3.8%,
+        hsl(180, 10%, 60%, var(--alpha)) 4.5%,
+        hsl(180, 10%, 60%, var(--alpha)) 5.2%,
+        #0e152e 10%,
+        #0e152e 12%) var(--bg-x, 10%) var(--bg-y, 10%) / 300%;
+    --shade: radial-gradient(farthest-corner circle at var(--x, 10%) var(--y, 10%),
+        rgba(255, 255, 255, 0.1) 12%,
+        rgba(255, 255, 255, 0.15) 20%,
+        rgba(255, 255, 255, 0.25) 120%) var(--bg-x, 10%) var(--bg-y, 10%) / 300%;
+  }
 
   html {
     overflow-y: hidden;
@@ -62,7 +90,6 @@
     transform: rotateY(var(--r-x)) rotateX(var(--r-y));
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(245, 242, 242);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,21 +101,47 @@
     transform: rotateY(0deg) rotateX(0deg);
   }
 
-
   .card__soft-light {
     position: absolute;
     inset: 0;
     z-index: 20;
-    /* mix-blend-mode: soft-light; */
-    /* mix-blend-mode: difference; */
-    background: radial-gradient(farthest-corner circle at var(--x) var(--y),
+    mix-blend-mode: soft-light;
+    transition: transform 0.1s;
+    background: radial-gradient(farthest-corner circle at var(--x, 10%) var(--y, 20%),
         rgba(255, 255, 255, 0.8) 10%,
         rgba(255, 255, 255, 0.65) 20%,
         rgba(255, 255, 255, 0) 90%);
-
   }
 
 
+
+  .card__layer2 {
+    position: absolute;
+
+    z-index: 30;
+    width: 80%;
+    height: 80%;
+    mix-blend-mode: color-dodge;
+    will-change: background;
+    transition-property: opacity;
+    border-radius: 10px;
+    background-blend-mode: hue, hue, hard-light, overlay;
+    background: var(--rainbow), var(--diagonal);
+  }
+
+  /* second crazy blend  */
+  .card__layer2:after {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--pattern), var(--rainbow), var(--diagonal), var(--shade);
+    mix-blend-mode: exclusion;
+    background-size: 75%, 200% 400%, 800%, 200%;
+    background-position: center, 0% var(--bg-y),
+      calc(var(--bg-x) * -1) calc(var(--bg-y) * -1), var(--bg-x) var(--bg-y);
+    background-blend-mode: soft-light, hue, hard-light;
+  }
 
   .card__inner {
     position: absolute;
@@ -131,6 +184,7 @@
     width: 80%;
     height: 80%;
     object-fit: cover;
+    border-radius: 10px;
   }
 </style>
 
@@ -148,11 +202,17 @@
     let rX = -(X - 0.5) * 26;
     let rY = (Y - 0.5) * 26;
 
+    let bgX = 40 + 20 * X;
+    let bgY = 40 + 20 * Y;
+
     document.documentElement.style.setProperty("--x", 100 * X + "%");
     document.documentElement.style.setProperty("--y", 100 * Y + "%");
 
     document.documentElement.style.setProperty("--r-x", rX + "deg");
     document.documentElement.style.setProperty("--r-y", rY + "deg");
+
+    document.documentElement.style.setProperty("--bg-x", bgX + "%");
+    document.documentElement.style.setProperty("--bg-y", bgY + "%");
   });
 </script>
 
