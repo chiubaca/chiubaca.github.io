@@ -123,7 +123,7 @@
   }
 
   .center {
-    height: 100vh;
+    height: var(--app-height, 100vh);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -243,11 +243,13 @@
   .title {
     text-align: center;
     font-family: "Inconsolata", monospace;
+    font-size: 1.8rem;
   }
 
   .bio {
     text-align: center;
     font-family: "Inconsolata", monospace;
+    font-size: 0.9rem;
   }
 
   .pic__wrapper {
@@ -274,13 +276,21 @@
       width: 26rem;
       aspect-ratio: 1/2;
     }
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .bio {
+      font-size: 1.2rem;
+    }
   }
 
-  @media (min-width: 870px) {
+  @media (min-width: 900px) {
 
     /* desktop */
     .card {
-      width: 50rem;
+      width: 60rem;
       aspect-ratio: 2/1;
     }
 
@@ -288,7 +298,7 @@
       flex-direction: row;
 
       gap: 2rem;
-      padding: 4rem;
+      padding: 5rem;
     }
 
     .info-wrapper {
@@ -301,6 +311,15 @@
 
     .link {
       width: 30%;
+      font-size: 0.9rem;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .bio {
+      font-size: 1.2rem;
     }
 
     .socials {
@@ -340,6 +359,15 @@
     document.documentElement.style.setProperty("--bg-x", bgX + "%");
     document.documentElement.style.setProperty("--bg-y", bgY + "%");
   });
+
+  // fix mobile for browser chopping off bottom of card
+  // https://stackoverflow.com/a/50683190/7207193
+  const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+  }
+  window.addEventListener('resize', appHeight)
+  appHeight()
 </script>
 
 <script defer async src="https://cdn.counter.dev/script.js" data-id="91ee2db8-dc88-40a2-9529-ef18149e911b"
