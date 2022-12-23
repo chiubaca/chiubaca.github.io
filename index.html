@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="/assets/site.webmanifest">
   <meta name="description" content="Hey, I'm Alex Chiu, a full-stack web developer. Take my card...">
   <title>Alex Chiu | ᴛᴀᴋᴇ ᴍʏ ᴄᴀʀᴅ...</title>
 </head>
@@ -359,6 +359,17 @@
     document.documentElement.style.setProperty("--bg-x", bgX + "%");
     document.documentElement.style.setProperty("--bg-y", bgY + "%");
   });
+
+
+  const acl = new Accelerometer({ frequency: 60 });
+  acl.addEventListener("reading", () => {
+    console.log(`Acceleration along the X-axis ${acl.x}`);
+    console.log(`Acceleration along the Y-axis ${acl.y}`);
+    console.log(`Acceleration along the Z-axis ${acl.z}`);
+  });
+
+  acl.start();
+
 
   // fix mobile for browser chopping off bottom of card
   // https://stackoverflow.com/a/50683190/7207193
