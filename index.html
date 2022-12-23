@@ -142,8 +142,8 @@
     position: absolute;
 
     z-index: 30;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     mix-blend-mode: color-dodge;
     will-change: background;
     transition-property: opacity;
@@ -233,8 +233,8 @@
 
   .profile-pic {
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -255,6 +255,34 @@
       width: 50rem;
       aspect-ratio: 2/1;
     }
+
+    .card__inner {
+      flex-direction: row;
+
+      gap: 2rem;
+      padding: 4rem;
+    }
+
+    .info-wrapper {
+      flex: 1;
+    }
+
+    .pic__wrapper {
+      flex: 1;
+    }
+
+    .link {
+      width: 30%;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
   }
 </style>
 
