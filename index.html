@@ -167,7 +167,6 @@
 
   .card__layer2 {
     position: absolute;
-
     z-index: 30;
     width: 100%;
     height: 100%;
@@ -176,7 +175,7 @@
     transition-property: opacity;
     border-radius: 10px;
     background-blend-mode: hue, hue, hard-light, overlay;
-    background: var(--diagonal);
+    /* background: var(--diagonal); */
   }
 
   /* second crazy blend  */
@@ -340,9 +339,7 @@
   let h = el.clientHeight;
   let b = el.getBoundingClientRect();
 
-  el.addEventListener("mousemove", (e) => {
-    let X = (e.clientX - b.left) / w;
-    let Y = (e.clientY - b.top) / h;
+  const handlePosition = (X, Y) => {
 
     let rX = -(X - 0.5) * 26;
     let rY = (Y - 0.5) * 26;
@@ -358,18 +355,21 @@
 
     document.documentElement.style.setProperty("--bg-x", bgX + "%");
     document.documentElement.style.setProperty("--bg-y", bgY + "%");
+  }
+
+  el.addEventListener("mousemove", (e) => {
+    let X = (e.clientX - b.left) / w;
+    let Y = (e.clientY - b.top) / h;
+    handlePosition(X, Y)
+
   });
 
+  el.addEventListener('touchmove', (e) => {
 
-  const acl = new Accelerometer({ frequency: 60 });
-  acl.addEventListener("reading", () => {
-    console.log(`Acceleration along the X-axis ${acl.x}`);
-    console.log(`Acceleration along the Y-axis ${acl.y}`);
-    console.log(`Acceleration along the Z-axis ${acl.z}`);
+    let X = (e.targetTouches[0].clientX - b.left) / w;
+    let Y = (e.targetTouches[0].clientY - b.top) / h;
+    handlePosition(X, Y)
   });
-
-  acl.start();
-
 
   // fix mobile for browser chopping off bottom of card
   // https://stackoverflow.com/a/50683190/7207193
